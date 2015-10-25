@@ -16,8 +16,7 @@ public class Escalation implements Serializable {
     private String contactPerson;
     private String contactNo;
 
-    private Escalation(){
-    }
+    private Escalation(){}
     public Long getEscalationId(){
         return escalationId;
     }
@@ -27,9 +26,7 @@ public class Escalation implements Serializable {
     public String getContactPerson(){
         return contactPerson;
     }
-    public String getContactNo(){
-        return contactNo;
-    }
+    public String getContactNo(){return contactNo;}
 
     public Escalation(Builder builder){
         escalationId=builder.escalationId;
@@ -43,6 +40,8 @@ public class Escalation implements Serializable {
         private String description;
         private String contactPerson;
         private String contactNo;
+
+
 
         public Builder copy(Escalation value){
             this.escalationId=value.escalationId;
